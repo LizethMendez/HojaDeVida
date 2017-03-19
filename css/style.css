@@ -1,0 +1,159 @@
+/*Header*/
+.header{
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.298039) 5px 1px 6px;
+  text-transform: uppercase; 
+  border: 10px;
+  padding: 5px;
+}
+
+.Inicio{
+  border: 20px;
+  padding: 1px;
+  background: #7c4dff;
+  font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+}
+
+.logotipo{
+  float:left;
+  margin-top: 10px;
+}    
+
+.main li{
+    display: inline;
+    margin-left: 60px;
+    margin-top: 10px;
+    margin-right: 23px;
+    margin-bottom: 0px;
+    padding: 4px;
+}
+
+.main li a{
+  text-decoration: none;
+}
+
+.main a:hover {
+    border-bottom: 5px solid #7c4dff;
+    text-decoration: none;
+}
+
+.main a:active {
+    border-bottom: 5px solid #7c4dff;
+    text-decoration: none;
+}
+
+/* Descripción */
+
+#about-me h1{
+	font-size: 50px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.presentation{
+	display: inline-block;
+	text-align: justify;
+	padding: 20px 30px;
+	margin-right: 150px;
+	margin-left: 150px;
+}
+
+.photo img{
+	display: inline-block;
+	width: 20%;
+	border-radius: 5%;
+	margin-left: 550px;
+	margin-top: 50px;
+}
+
+
+h3{
+	color:#397EF6;
+}
+
+h4{
+	color: #F70724;
+}
+
+/*Hasta Descripción */
+
+/* Comienza Proyectos */
+
+.container-pro{
+	margin-bottom: 80px;
+  margin-left: 50px;
+}
+
+.container-pro a{
+	text-decoration: underline;
+	color: #F70724;
+}
+
+.container-pro p{
+	text-align: justify-all;
+}
+
+
+h2{
+	font-size: 50px;
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 40px;
+}
+
+#projects .container-up{
+	display: table-cell;
+	width: 30%;
+	padding: 10px;
+	margin-left: 40px;
+}
+
+#projects img{
+	width: 80%;
+}
+
+/* Hasta acá Proyectos */
+
+
+/*línea de división*/
+
+.line{
+	border:3px solid #EAEDED;
+	border-radius: 300px/10px; 
+	margin-bottom: 60px;
+}
+
+/* Hasta acá línea de división */
+
+/* footer */
+
+.social-media{
+	background: #F2F4F4;
+	text-align: center;
+	padding: 10px;
+}
+
+.social-media li {
+	font-size: 20px;
+}
+
+.social-media  h4{
+	font-size: 20px;
+	margin-left: 350px;
+	margin-right: 350px;
+	color: #397EF6;
+}
+
+.social-media ul {
+	list-style: none;
+}
+
+.social-media ul li {
+	text-decoration: none;
+}
+
+.social-media a {
+	text-decoration: none;
+	display: inline;
+}
+/* Hasta acá footer */
