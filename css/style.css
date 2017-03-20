@@ -7,7 +7,7 @@
   padding: 5px;
 }
 
-.Inicio{
+.inicio{
   border: 20px;
   padding: 1px;
   background: #7c4dff;
@@ -25,11 +25,12 @@
     margin-top: 10px;
     margin-right: 23px;
     margin-bottom: 0px;
-    padding: 4px;
+    padding: 48px;
 }
 
 .main li a{
   text-decoration: none;
+  color: dodgerblue;
 }
 
 .main a:hover {
@@ -58,21 +59,22 @@
 	margin-left: 150px;
 }
 
-.photo img{
-	display: inline-block;
-	width: 20%;
-	border-radius: 5%;
-	margin-left: 550px;
-	margin-top: 50px;
+.presentation img{
+	width: 230px;
 }
 
-
+.presentation p{
+	line-height: 23px;
+	font-size: 18px;
+}
 h3{
 	color:#397EF6;
+	font-size: 30px;
 }
 
 h4{
 	color: #F70724;
+	font-size: 20px;
 }
 
 /*Hasta Descripción */
@@ -80,21 +82,22 @@ h4{
 /* Comienza Proyectos */
 
 .container-pro{
-	margin-bottom: 80px;
+  margin-bottom: 80px;
   margin-left: 50px;
 }
 
 .container-pro a{
 	text-decoration: underline;
 	color: #F70724;
+	font-size: 20px;
 }
 
 .container-pro p{
 	text-align: justify-all;
+	font-size: 18px;
 }
 
-
-h2{
+h2 {
 	font-size: 50px;
 	text-align: center;
 	font-weight: bold;
@@ -118,42 +121,213 @@ h2{
 /*línea de división*/
 
 .line{
-	border:3px solid #EAEDED;
+	border:2px solid #EAEDED;
 	border-radius: 300px/10px; 
 	margin-bottom: 60px;
 }
 
 /* Hasta acá línea de división */
 
-/* footer */
-
-.social-media{
-	background: #F2F4F4;
-	text-align: center;
-	padding: 10px;
+footer {
+  background-color:#fcfcfc;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 5px 0px;
 }
 
-.social-media li {
-	font-size: 20px;
+.container-footer {
+  padding-top: 30px;
+  padding-left: 30px;
+  margin-right:auto;
+  margin-left:auto;
+  max-width:100%;
+  display: block;
+  position: relative;
+  overflow: hidden;
 }
 
-.social-media  h4{
-	font-size: 20px;
-	margin-left: 350px;
-	margin-right: 350px;
-	color: #397EF6;
+.container-footer h2 {
+  font-size: 22px;
+  line-height: 22px;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: rgb(35, 35, 35);
+  font-family: 'Roboto', sans-serif, Helvetica, Arial;
+  text-align:left;
 }
 
-.social-media ul {
-	list-style: none;
+.row {
+  margin-right:-15px;
+  margin-left:-15px;
 }
 
-.social-media ul li {
-	text-decoration: none;
+.col-sm-1 {
+  position:relative;
+  min-height:1px;
+  padding-right:15px;
+  padding-left:15px;  
+  float:left;
+  width:40%;
+  font-size: 17px;
 }
 
-.social-media a {
-	text-decoration: none;
-	display: inline;
+.col-sm-7 {
+  position:relative;
+  min-height:1px;
+  padding-right:15px;
+  padding-left:15px;  
+  float:left;
+  width:50%;
 }
-/* Hasta acá footer */
+
+.container-footer h5 {
+  font-size: 15px;
+  line-height: 32px;
+  margin-top: 0px;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: rgb(35, 35, 35);
+  font-family: 'Roboto', sans-serif, Helvetica, Arial;
+}
+.list-unstyled {
+  padding-left:0;
+  list-style:none;
+}
+
+.list-unstyled li {
+    margin-bottom: 12px;
+}
+
+.list-icons {
+    padding-left: 0;
+    margin-left: 36px;
+    list-style-type: none;
+}
+
+.list-icons > li {
+    position: relative;
+}
+
+.list-icons > li > i {
+    position: absolute;
+    left: -36px;
+    width: 36px;
+    top: 2px;
+    text-align: center;
+    color: #232323;
+    font-size: 18px;
+    vertical-align: middle;
+}
+.spacer {
+    margin-bottom: 48px;
+}
+
+.social-icons {
+  margin-top: 24px;
+  margin-bottom: 24px; 
+}
+
+.social-icon {
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  font-size: 16px;
+  color: #232323;
+  background: #fff;
+  border-radius: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .13);
+  margin: 0 4px;
+  text-align: center;
+}
+
+.social-icon:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .13), 0 6px 10px rgba(0, 0, 0, .3);
+}
+
+.container-footer .social-icon {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .13), 0 6px 10px rgba(0, 0, 0, .3);
+}
+
+.social-icon:hover {
+    background: #7c4dff;
+    color: #fff;
+}
+
+.form-horizontal .form-group{
+  margin-right:-15px;
+  margin-left:-15px;  
+}
+
+.col-sm-2 {
+  position:relative;
+  min-height:1px;
+  padding-right:15px;
+  padding-left:15px;
+  width:16%;
+  float: left;
+}
+
+.control-label {
+  color:#F70724;
+}
+
+.col-sm-4 {
+  position:relative;
+  min-height:1px;
+  padding-right:15px;
+  padding-left:15px;
+  float: left;
+  width:83.33333333%;
+}
+
+.contact-name, .contact-email,  .contact-message {
+  width: 100%;
+  border-style: none none solid;
+  border-image: initial;
+  border-bottom: 1px solid rgb(215, 215, 215);
+  background: none;
+  padding: 2px 6px;
+  transition: 0.25s;
+  outline: none !important;
+}
+
+.button {
+    font-weight: 500;
+    text-transform: uppercase;
+    -webkit-transition: .25s;
+    -moz-transition: .25s;
+    -o-transition: .25s;
+    -ms-transition: .25s;
+    transition: .25s;
+    outline: none !important;
+}
+
+.button:hover {
+    text-decoration: none;
+}
+
+.button i {
+    font-size: 24px;
+    vertical-align: middle;
+}
+
+.solid-button {
+    font-size: 15px;
+    line-height: 26px;
+    padding: 11px 29px ;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .3);
+    text-align: center;
+}
+
+.solid-button:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .3);
+}
+
+.solid-button.purple {
+    background: #7c4dff;
+    color: #fff;
+}
