@@ -45,6 +45,11 @@
 
 /* Descripción */
 
+.banner{
+  background: url(../img/descripcion.jpg);
+  background-size: cover;
+}
+
 #about-me h1{
 	font-size: 50px;
 	text-align: center;
@@ -61,6 +66,7 @@
 
 .presentation img{
 	width: 230px;
+  margin-bottom: 30px;
 }
 
 .presentation p{
@@ -114,6 +120,23 @@ h2 {
 #projects img{
 	width: 80%;
 }
+
+/*Comienzo de zoom*/
+.zoom{
+    transition: 1s ease;
+    -moz-transition: 1s ease; /* Firefox */
+    -webkit-transition: 1s ease; /* Chrome - Safari */
+    -o-transition: 1s ease; /* Opera */
+  }
+  
+.zoom:hover{
+  transform : scale(1.2);
+    -moz-transform : scale(1.2); /* Firefox */
+    -webkit-transform : scale(1.2); /* Chrome - Safari */
+    -o-transform : scale(1.2); /* Opera */
+    -ms-transform : scale(1.2); /* IE9 */
+} 
+/*final de zoom*/
 
 /* Hasta acá Proyectos */
 
