@@ -2,7 +2,50 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Portáfolio</title>
+<!--<title>Portáfolio</title>-->
+
+<title>Text Animation</title>
+    <style>
+        canvas{border: 0px solid #bbb;}
+        .subdiv{width: 320px;}
+        .text{margin: center; width: 290px;}        
+    </style>
+ 
+    <script type="text/javascript">
+        var can, ctx, addAngle, addScale, step, steps = 150,
+              delay = 20;
+
+ 
+        function init() {
+            can = document.getElementById("MyCanvas1");
+            ctx = can.getContext("2d");
+            ctx.fillStyle = "black";
+            ctx.font = "30pt Roboto";
+            ctx.textAlign = "center";
+            ctx.textBaseline = "middle";
+            addAngle = Math.PI * 2 / steps;
+            addScale = 1 / steps;
+            step = 0;
+            RotateTextSphere()
+        }
+ 
+        function RotateTextSphere() {
+            step++;
+            ctx.clearRect(0, 0, can.width, can.height);
+            ctx.save();
+            ctx.translate(can.width / 2, can.height / 2);
+            ctx.scale(addScale * step, addScale * step);
+            ctx.rotate(addAngle * step);
+            ctx.fillText("ACERCA DE MI", 0, 0);
+            ctx.restore();
+           if (step < steps)
+                var t = setTimeout('RotateTextSphere()', 20);
+        }
+ 
+    </script>
+ 
+
+
 </head>
 <link href="https://designers.hubspot.com/hs-fs/hub/327485/file-2054199286-css/font-awesome.css" rel="stylesheet">
 <link rel=”stylesheet” href=”css/font-awesome.css“>
@@ -14,11 +57,11 @@
   <head>
     <link href="https://fonts.googleapis.com/css?family=Anton|Playfair+Display|Ubuntu|Roboto" rel="stylesheet">
   </head>  
-  <body>
+  <body onload="init();">
     <header id="header" class="header contenedor"> <!-- header -->
       <div class="inicio" style="color: white;">
         <figure class="email"> <!-- logo -->
-          <a href="#"><img src="http://testwordpress.pragmagenia.net/wp-content/uploads/2016/03/Email-Blanco.png" width="30" height="30" alt="email"/></a>  DISPONIBLE PARA FREELANCE
+          <a href="#"><img src="http://testwordpress.pragmagenia.net/wp-content/uploads/2016/03/Email-Blanco.png" width="30" height="30" alt="email"/></a>  <p>DISPONIBLE PARA FREELANCE</p>
         </figure>
       </div>  
       <figure class="logotipo"> <!-- logo -->
@@ -43,8 +86,12 @@
     </header>
     <figure class="banner imgcv">
     <section id="about-me">	
-      <h1 class="title">ACERCA DE MI</h1>
-  		<div class="curriculum presentation">
+    <div class="subdiv">
+        <canvas id="MyCanvas1" width="300" height="200">
+        This browser or document mode doesn't support canvas object</canvas>
+            </div>
+  
+      <div class="curriculum presentation">
       <img src="http://premiumlayers.net/demo/wp/sility/wp-content/uploads/2015/04/man01.png" align="right"/>
   			<h3>Camilo Zuluaga</h3>
   			<h4>Diseñador Gráfico</h4><br>
